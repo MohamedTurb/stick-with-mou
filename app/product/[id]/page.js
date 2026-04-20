@@ -69,7 +69,7 @@ export default function ProductPage() {
             transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
           >
             {/* Main image */}
-            <div className="relative aspect-square bg-nox-dark overflow-hidden group">
+            <div className="product-bg-pattern relative aspect-square overflow-hidden group">
               <AnimatePresence mode="wait">
                 <motion.div
                   key={activeImg}
@@ -126,7 +126,7 @@ export default function ProductPage() {
                   <button
                     key={i}
                     onClick={() => setActiveImg(i)}
-                    className={`relative w-20 h-20 overflow-hidden border-2 transition-all duration-200 ${
+                    className={`product-bg-pattern relative w-20 h-20 overflow-hidden border-2 transition-all duration-200 ${
                       activeImg === i
                         ? "border-nox-accent"
                         : "border-nox-border hover:border-nox-muted"

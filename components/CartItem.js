@@ -19,7 +19,7 @@ export default function CartItem({ item }) {
     >
       {/* Product image */}
       <Link href={`/product/${item.id}`} className="flex-shrink-0">
-        <div className="relative w-20 h-20 bg-nox-dark overflow-hidden">
+        <div className="product-bg-pattern relative w-20 h-20 overflow-hidden">
           <Image
             src={item.images[0]}
             alt={item.name}
