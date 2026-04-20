@@ -64,7 +64,7 @@ export default function HomePage() {
             variants={fadeUp}
             className="font-mono text-[10px] tracking-[0.5em] text-nox-gray uppercase mb-8"
           >
-            ✦ Premium Streetwear Stickers ✦
+            ✦ Premium Stickers ✦
           </motion.p>
 
           {/* Main Headline */}
@@ -138,7 +138,7 @@ export default function HomePage() {
         <div className="flex animate-marquee whitespace-nowrap">
           {Array(6).fill(0).map((_, i) => (
             <span key={i} className="font-mono text-xs tracking-[0.3em] text-nox-gray uppercase mx-10">
-              NOX STICKERS ✦ WEATHERPROOF ✦ DIE-CUT VINYL ✦ SHIPS WORLDWIDE ✦ HOLOGRAPHIC ✦ MATTE + GLOSS ✦
+              STICK WITH MOU STICKERS ✦ WEATHERPROOF ✦ DIE-CUT VINYL ✦ SHIPS WORLDWIDE ✦ HOLOGRAPHIC ✦ MATTE + GLOSS ✦
             </span>
           ))}
         </div>
@@ -184,7 +184,7 @@ export default function HomePage() {
               transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
             >
               <p className="font-mono text-[10px] tracking-[0.4em] text-nox-gray uppercase mb-6">
-                ✦ About NOX
+                ✦ About Stick With Mou
               </p>
               <h2 className="font-display text-6xl md:text-8xl tracking-widest text-nox-white leading-none mb-8">
                 DARK.<br />
@@ -192,7 +192,7 @@ export default function HomePage() {
                 REAL.
               </h2>
               <p className="text-nox-gray text-sm leading-relaxed mb-6 max-w-md">
-                NOX was born from a simple idea: stickers should be art. Not an afterthought. Every design is crafted with obsessive attention to detail — the kind you notice when you peel the backing and feel the weight of the cut.
+                Stick With Mou was born from a simple idea: stickers should be art. Not an afterthought. Every design is crafted with obsessive attention to detail — the kind you notice when you peel the backing and feel the weight of the cut.
               </p>
               <p className="text-nox-gray text-sm leading-relaxed mb-8 max-w-md">
                 Stick With Mou means committing to what you believe in. That's the ethos. That's the brand.
@@ -265,10 +265,10 @@ export default function HomePage() {
           }}
         />
         <div className="relative z-10 max-w-4xl mx-auto text-center">
-          <p className="font-mono text-[11px] tracking-[0.4em] text-nox-black/60 uppercase mb-4">
+          <p className="font-mono text-[11px] tracking-[0.4em] text-nox-white/60 uppercase mb-4">
             Limited drops. No restocks.
           </p>
-          <h2 className="font-display text-6xl md:text-8xl tracking-widest text-nox-black leading-none mb-8">
+          <h2 className="font-display text-6xl md:text-8xl tracking-widest text-nox-white leading-none mb-8">
             GET YOURS NOW
           </h2>
           <Link href="/shop">

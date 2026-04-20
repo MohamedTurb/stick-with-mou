@@ -8,8 +8,8 @@ import toast from "react-hot-toast";
 
 // Badge color map
 const badgeColors = {
-  BESTSELLER: "bg-nox-accent text-nox-black",
-  NEW: "bg-white text-nox-black",
+  BESTSELLER: "bg-nox-accent text-nox-white",
+  NEW: "bg-white text-nox-white",
   LIMITED: "bg-nox-red text-white",
   PACK: "bg-nox-muted text-nox-white",
   FOIL: "bg-gradient-to-r from-yellow-400 via-purple-400 to-cyan-400 text-black",
@@ -42,12 +42,12 @@ export default function ProductCard({ product, index = 0 }) {
       <Link href={`/product/${product.id}`} className="group block">
         <div className="bg-nox-card border border-nox-border hover:border-nox-muted transition-all duration-300 overflow-hidden">
           {/* Image Container */}
-          <div className="product-img-wrap product-bg-pattern relative aspect-square overflow-hidden">
+          <div className="product-img-wrap product-bg-pattern relative aspect-square overflow-hidden p-4">
             <Image
               src={product.images[0]}
               alt={product.name}
               fill
-              className="object-cover"
+              className="object-contain"
               sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 25vw"
             />
 
@@ -61,7 +61,7 @@ export default function ProductCard({ product, index = 0 }) {
                 {/* Quick add to cart */}
                 <button
                   onClick={handleAddToCart}
-                  className="w-10 h-10 bg-nox-accent text-nox-black flex items-center justify-center hover:bg-white transition-colors"
+                  className="w-10 h-10 bg-nox-accent text-nox-white flex items-center justify-center hover:bg-white transition-colors"
                   aria-label="Add to cart"
                 >
                   <ShoppingCart size={16} />

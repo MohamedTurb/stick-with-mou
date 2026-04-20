@@ -2,7 +2,7 @@
 import { motion } from "framer-motion";
 
 /**
- * Reusable button component with NOX brand variants
+ * Reusable button component with brand variants
  * @param {string} variant - "primary" | "secondary" | "ghost" | "danger"
  * @param {string} size - "sm" | "md" | "lg"
  */
@@ -18,11 +18,11 @@ export default function Button({
   ...props
 }) {
   const base =
-    "btn-nox inline-flex items-center justify-center gap-2 font-mono tracking-widest uppercase transition-all duration-200 disabled:opacity-40 disabled:cursor-not-allowed select-none";
+    "btn-brand inline-flex items-center justify-center gap-2 font-mono tracking-widest uppercase transition-all duration-200 disabled:opacity-40 disabled:cursor-not-allowed select-none";
 
   const variants = {
     primary:
-      "bg-nox-accent text-nox-black hover:bg-nox-white active:scale-95",
+      "bg-nox-accent text-nox-white hover:bg-nox-white active:scale-95",
     secondary:
       "bg-transparent border border-nox-border text-nox-white hover:border-nox-accent hover:text-nox-accent active:scale-95",
     ghost:

@@ -14,6 +14,26 @@ export default function CartPage() {
   const shipping = totalPrice >= freeShippingThreshold ? 0 : totalPrice === 0 ? 0 : shippingFee;
   const orderTotal = totalPrice + shipping;
   const freeShippingRemaining = Math.max(0, freeShippingThreshold - totalPrice);
+  const whatsappNumber = "201030498067";
+
+  const handleWhatsAppCheckout = () => {
+    if (!cartItems.length) return;
+
+    const message = encodeURIComponent(
+      [
+        "Hello Stick With Mou, I want to place this order:",
+        "",
+        ...cartItems.map((item) => `${item.name} x${item.quantity}`),
+        "",
+        `Items: ${totalItems}`,
+        `Subtotal: ${totalPrice.toFixed(2)} EGP`,
+        `Shipping: ${shipping === 0 ? "FREE" : `${shipping.toFixed(2)} EGP`}`,
+        `Total: ${orderTotal.toFixed(2)} EGP`,
+      ].join("\n")
+    );
+
+    window.open(`https://wa.me/${whatsappNumber}?text=${message}`, "_blank", "noopener,noreferrer");
+  };
 
   // Don't render until localStorage is hydrated
   if (!isLoaded) {
@@ -165,7 +185,13 @@ export default function CartPage() {
                 </div>
 
                 {/* CTA */}
-                <Button variant="primary" size="md" className="w-full group mb-3">
+                <Button
+                  variant="primary"
+                  size="md"
+                  className="w-full group mb-3"
+                  onClick={handleWhatsAppCheckout}
+                  disabled={!cartItems.length}
+                >
                   Proceed to Checkout
                   <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
                 </Button>

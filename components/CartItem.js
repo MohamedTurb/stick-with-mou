@@ -19,12 +19,12 @@ export default function CartItem({ item }) {
     >
       {/* Product image */}
       <Link href={`/product/${item.id}`} className="flex-shrink-0">
-        <div className="product-bg-pattern relative w-20 h-20 overflow-hidden">
+        <div className="product-bg-pattern relative w-20 h-20 overflow-hidden p-1.5">
           <Image
             src={item.images[0]}
             alt={item.name}
             fill
-            className="object-cover hover:scale-105 transition-transform duration-300"
+            className="object-contain hover:scale-105 transition-transform duration-300"
           />
         </div>
       </Link>

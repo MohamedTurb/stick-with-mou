@@ -15,7 +15,7 @@ export default function SectionHeading({ label, title, subtitle, light = false }
           ✦ {label}
         </p>
       )}
-      <h2 className={`font-display text-5xl md:text-7xl tracking-widest ${light ? "text-nox-black" : "text-nox-white"}`}>
+      <h2 className={`font-display text-5xl md:text-7xl tracking-widest ${light ? "text-nox-white" : "text-nox-white"}`}>
         {title}
       </h2>
       {subtitle && (

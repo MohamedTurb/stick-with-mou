@@ -187,7 +187,7 @@ export default function ContactPage() {
 
             {/* WhatsApp */}
             <a
-              href="https://wa.me/201000000000?text=Hey%20NOX%2C%20I%20want%20to%20order%20stickers!"
+              href="https://wa.me/201030498067?text=Hey%20Stick%20With%20Mou%2C%20I%20want%20to%20order%20stickers!"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-4 p-5 bg-nox-card border border-nox-border hover:border-nox-accent transition-all duration-200 group"
@@ -204,7 +204,7 @@ export default function ContactPage() {
 
             {/* Instagram */}
             <a
-              href="https://instagram.com/nox.stickers"
+              href="https://www.instagram.com/stickwith.mou?igsh=b3F0bm4xbXp3OGg5"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-4 p-5 bg-nox-card border border-nox-border hover:border-nox-accent transition-all duration-200 group"
@@ -214,7 +214,7 @@ export default function ContactPage() {
               </div>
               <div>
                 <p className="font-mono text-xs text-nox-white tracking-[0.2em] uppercase mb-0.5">Instagram</p>
-                <p className="font-mono text-[10px] text-nox-gray">@nox.stickers</p>
+                <p className="font-mono text-[10px] text-nox-gray">@stickwithmou</p>
                 <p className="font-mono text-[9px] text-nox-muted mt-1">DMs open · New drops first</p>
               </div>
             </a>

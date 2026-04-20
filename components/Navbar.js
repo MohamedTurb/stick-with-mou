@@ -46,7 +46,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="group flex items-center gap-2">
             <span className="font-display text-3xl text-nox-white tracking-widest group-hover:text-nox-accent transition-colors duration-200">
-              NOX
+              Stick With Mou
             </span>
             <span className="hidden sm:block font-mono text-[9px] text-nox-gray tracking-[0.3em] mt-1 uppercase">
               Stick With Mou
@@ -91,7 +91,7 @@ export default function Navbar() {
                     initial={{ scale: 0 }}
                     animate={{ scale: 1 }}
                     exit={{ scale: 0 }}
-                    className="absolute -top-0.5 -right-0.5 w-4 h-4 bg-nox-accent text-nox-black text-[9px] font-bold rounded-full flex items-center justify-center font-mono"
+                    className="absolute -top-0.5 -right-0.5 w-4 h-4 bg-nox-accent text-nox-white text-[9px] font-bold rounded-full flex items-center justify-center font-mono"
                   >
                     {totalItems > 9 ? "9+" : totalItems}
                   </motion.span>

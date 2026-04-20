@@ -69,7 +69,7 @@ export default function ProductPage() {
             transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
           >
             {/* Main image */}
-            <div className="product-bg-pattern relative aspect-square overflow-hidden group">
+            <div className="product-bg-pattern relative aspect-square overflow-hidden group p-8">
               <AnimatePresence mode="wait">
                 <motion.div
                   key={activeImg}
@@ -83,7 +83,7 @@ export default function ProductPage() {
                     src={product.images[activeImg]}
                     alt={product.name}
                     fill
-                    className="object-cover"
+                    className="object-contain"
                     priority
                   />
                 </motion.div>
@@ -94,7 +94,7 @@ export default function ProductPage() {
                 <div className={`absolute top-4 left-4 px-3 py-1 font-mono text-[10px] tracking-widest font-bold z-10 ${
                   product.badge === "LIMITED" ? "bg-nox-red text-white" :
                   product.badge === "FOIL" ? "bg-gradient-to-r from-yellow-400 via-purple-400 to-cyan-400 text-black" :
-                  "bg-nox-accent text-nox-black"
+                  "bg-nox-accent text-nox-white"
                 }`}>
                   {product.badge}
                 </div>
@@ -126,13 +126,13 @@ export default function ProductPage() {
                   <button
                     key={i}
                     onClick={() => setActiveImg(i)}
-                    className={`product-bg-pattern relative w-20 h-20 overflow-hidden border-2 transition-all duration-200 ${
+                    className={`product-bg-pattern relative w-20 h-20 overflow-hidden border-2 transition-all duration-200 p-1.5 ${
                       activeImg === i
                         ? "border-nox-accent"
                         : "border-nox-border hover:border-nox-muted"
                     }`}
                   >
-                    <Image src={img} alt={`View ${i + 1}`} fill className="object-cover" />
+                    <Image src={img} alt={`View ${i + 1}`} fill className="object-contain" />
                   </button>
                 ))}
               </div>

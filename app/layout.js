@@ -6,12 +6,12 @@ import CustomCursor from "@/components/CustomCursor";
 import { Toaster } from "react-hot-toast";
 
 export const metadata = {
-  title: "NOX — Stick With Mou",
-  description: "Premium streetwear stickers. Dark, minimal, made to last.",
-  keywords: "stickers, streetwear, vinyl, NOX, premium, holographic",
+  title: "Stick With Mou",
+  description: "Premium stickers. Dark, minimal, made to last.",
+  keywords: "stickers, vinyl, premium, holographic, Stick With Mou",
   openGraph: {
-    title: "NOX — Stick With Mou",
-    description: "Premium streetwear stickers.",
+    title: "Stick With Mou",
+    description: "Premium stickers.",
     type: "website",
   },
 };
@@ -30,15 +30,15 @@ export default function RootLayout({ children }) {
             position="bottom-right"
             toastOptions={{
               style: {
-                background: "#161616",
-                color: "#f5f5f5",
-                border: "1px solid #222222",
+                background: "#1A1A1A",
+                color: "#FFFFFF",
+                border: "1px solid #2A2A2A",
                 fontFamily: "var(--font-body)",
                 fontSize: "13px",
                 borderRadius: "4px",
               },
               success: {
-                iconTheme: { primary: "#e8ff00", secondary: "#080808" },
+                iconTheme: { primary: "#D4AF37", secondary: "#0A0A0A" },
               },
             }}
           />

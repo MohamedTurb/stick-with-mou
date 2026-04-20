@@ -15,17 +15,19 @@ module.exports = {
       },
       colors: {
         nox: {
-          black: '#080808',
-          dark: '#111111',
-          card: '#161616',
-          border: '#222222',
-          muted: '#333333',
-          gray: '#888888',
-          light: '#cccccc',
-          white: '#f5f5f5',
-          accent: '#e8ff00',         // neon yellow-green
-          'accent-dim': '#b8cc00',
-          red: '#ff2d2d',
+          black: '#0A0A0A',
+          dark: '#121212',
+          card: '#1A1A1A',
+          border: '#2A2A2A',
+          muted: '#A3A3A3',
+          gray: '#D6D6D6',
+          light: '#F2F2F2',
+          white: '#FFFFFF',
+          accent: '#D4AF37',
+          'accent-dim': '#B89225',
+          red: '#C1121F',
+          plum: '#7A0C14',
+          gold: '#D4AF37',
         }
       },
       animation: {

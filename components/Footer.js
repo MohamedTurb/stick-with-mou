@@ -10,7 +10,7 @@ export default function Footer() {
         <div className="flex animate-marquee whitespace-nowrap">
           {Array(8).fill(0).map((_, i) => (
             <span key={i} className="font-display text-sm tracking-[0.4em] text-nox-muted mx-8">
-              NOX ✦ STICK WITH MOU ✦ PREMIUM VINYL ✦ GEN Z ENERGY ✦ DARK MODE FOREVER ✦
+              STICK WITH MOU ✦ PREMIUM VINYL ✦ GEN Z ENERGY ✦ DARK MODE FOREVER ✦
             </span>
           ))}
         </div>
@@ -19,12 +19,12 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-3 gap-12">
         {/* Brand */}
         <div>
-          <span className="font-display text-5xl text-nox-white tracking-widest block mb-3">NOX</span>
+          <span className="font-display text-5xl text-nox-white tracking-widest block mb-3">Stick With Mou</span>
           <p className="font-mono text-[10px] text-nox-gray tracking-[0.3em] uppercase mb-6">
             Stick With Mou
           </p>
           <p className="text-nox-gray text-sm leading-relaxed max-w-xs">
-            Premium streetwear stickers. Die-cut precision. Weatherproof vinyl. Made for surfaces that deserve it.
+            Premium stickers. Die-cut precision. Weatherproof vinyl. Made for surfaces that deserve it.
           </p>
         </div>
 
@@ -66,7 +66,7 @@ export default function Footer() {
               className="flex items-center gap-3 text-nox-light hover:text-nox-accent transition-colors group"
             >
               <Instagram size={16} />
-              <span className="text-sm">@nox.stickers</span>
+              <span className="text-sm">@stickwithmou</span>
               <ArrowUpRight size={12} className="opacity-0 group-hover:opacity-100 transition-opacity" />
             </a>
             <a
@@ -95,7 +95,7 @@ export default function Footer() {
       {/* Bottom bar */}
       <div className="border-t border-nox-border px-6 py-5 flex flex-col sm:flex-row items-center justify-between gap-3">
         <p className="font-mono text-[10px] text-nox-muted tracking-widest">
-          © {new Date().getFullYear()} NOX. ALL RIGHTS RESERVED.
+          © {new Date().getFullYear()} STICK WITH MOU. ALL RIGHTS RESERVED.
         </p>
         <p className="font-mono text-[10px] text-nox-muted tracking-widest">
           PREMIUM VINYL • WEATHERPROOF • DIE-CUT

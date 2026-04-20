@@ -5,9 +5,7 @@ const imageFromPublic = (fileName) => `/images/${encodeURIComponent(fileName)}`;
 const imageFiles = [
   "(1) copy 3.png",
   "(204) copy 2.png",
-  "Brightness_Contrast 1.png",
   "Layer 1.png",
-  "Layer 10.png",
   "Layer 13.png",
   "Layer 14 copy 2.png",
   "Layer 15.png",
@@ -21,7 +19,6 @@ const imageFiles = [
   "Layer 22.png",
   "Layer 23.png",
   "Layer 24.png",
-  "Layer 25 copy 4.png",
   "Layer 25.png",
   "Layer 26.png",
   "Layer 27.png",
@@ -88,8 +85,8 @@ const slugFromFile = (fileName) =>
 
 export const products = imageFiles.map((fileName, index) => {
   const slug = slugFromFile(fileName) || `image-${index + 1}`;
-  const id = `nox-${String(index + 1).padStart(3, "0")}-${slug}`;
-  const name = nameFromFile(fileName);
+  const id = `swm-${String(index + 1).padStart(3, "0")}-${slug}`;
+  const name = `Layer ${index + 1}`;
   const tags = slug.split("-").filter(Boolean).slice(0, 3);
 
   return {

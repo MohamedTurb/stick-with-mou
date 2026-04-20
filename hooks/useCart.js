@@ -9,7 +9,7 @@ export function useCart() {
   // Load cart from localStorage on mount
   useEffect(() => {
     try {
-      const stored = localStorage.getItem("nox-cart");
+      const stored = localStorage.getItem("stick-with-mou-cart");
       if (stored) {
         setCartItems(JSON.parse(stored));
       }
@@ -23,7 +23,7 @@ export function useCart() {
   useEffect(() => {
     if (!isLoaded) return;
     try {
-      localStorage.setItem("nox-cart", JSON.stringify(cartItems));
+      localStorage.setItem("stick-with-mou-cart", JSON.stringify(cartItems));
     } catch (err) {
       console.error("Failed to save cart:", err);
     }

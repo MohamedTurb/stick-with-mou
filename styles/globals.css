@@ -124,7 +124,9 @@ body {
 /* Shared background pattern for all product image containers */
 .product-bg-pattern {
   background-color: #0a2f57;
-  background-image: url("/images/products-bg-pattern.png");
+  background-image:
+    url("/images/mm.jpg"),
+    linear-gradient(135deg, #0a2f57 0%, #103f73 55%, #0b2b4d 100%);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

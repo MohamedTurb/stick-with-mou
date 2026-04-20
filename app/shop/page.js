@@ -32,7 +32,7 @@ export default function ShopPage() {
           <SectionHeading
             label="Full Collection"
             title="SHOP ALL"
-            subtitle={`${products.length} premium streetwear stickers. Ships worldwide.`}
+            subtitle={`${products.length} premium stickers. Ships worldwide.`}
           />
         </div>
       </div>
