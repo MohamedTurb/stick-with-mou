@@ -77,7 +77,7 @@ export default function CartItem({ item }) {
 
           {/* Line total */}
           <span className="font-mono text-sm text-nox-accent">
-            ${(item.price * item.quantity).toFixed(2)}
+            {(item.price * item.quantity).toFixed(2)} EGP
           </span>
         </div>
       </div>

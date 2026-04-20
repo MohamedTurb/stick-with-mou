@@ -9,9 +9,11 @@ import Button from "@/components/Button";
 export default function CartPage() {
   const { cartItems, totalItems, totalPrice, clearCart, isLoaded } = useCartContext();
 
-  const shipping = totalPrice > 20 ? 0 : totalPrice === 0 ? 0 : 3.99;
+  const freeShippingThreshold = 200;
+  const shippingFee = 50;
+  const shipping = totalPrice >= freeShippingThreshold ? 0 : totalPrice === 0 ? 0 : shippingFee;
   const orderTotal = totalPrice + shipping;
-  const freeShippingRemaining = Math.max(0, 20 - totalPrice);
+  const freeShippingRemaining = Math.max(0, freeShippingThreshold - totalPrice);
 
   // Don't render until localStorage is hydrated
   if (!isLoaded) {
@@ -89,12 +91,12 @@ export default function CartPage() {
                   className="mb-6 p-4 bg-nox-card border border-nox-border"
                 >
                   <p className="font-mono text-[10px] text-nox-gray tracking-widest mb-3">
-                    Add <span className="text-nox-accent">${freeShippingRemaining.toFixed(2)}</span> more for free shipping
+                    Add <span className="text-nox-accent">{freeShippingRemaining.toFixed(2)} EGP</span> more for free shipping
                   </p>
                   <div className="h-0.5 bg-nox-border rounded-full overflow-hidden">
                     <motion.div
                       initial={{ width: 0 }}
-                      animate={{ width: `${Math.min(100, (totalPrice / 20) * 100)}%` }}
+                      animate={{ width: `${Math.min(100, (totalPrice / freeShippingThreshold) * 100)}%` }}
                       transition={{ duration: 0.6, ease: "easeOut" }}
                       className="h-full bg-nox-accent"
                     />
@@ -139,7 +141,7 @@ export default function CartPage() {
                     <span className="font-mono text-[11px] text-nox-gray">
                       Subtotal ({totalItems} {totalItems === 1 ? "item" : "items"})
                     </span>
-                    <span className="font-mono text-[11px] text-nox-light">${totalPrice.toFixed(2)}</span>
+                    <span className="font-mono text-[11px] text-nox-light">{totalPrice.toFixed(2)} EGP</span>
                   </div>
 
                   <div className="flex justify-between">
@@ -147,7 +149,7 @@ export default function CartPage() {
                     <span className="font-mono text-[11px]">
                       {shipping === 0
                         ? <span className="text-nox-accent">FREE</span>
-                        : <span className="text-nox-light">${shipping.toFixed(2)}</span>
+                        : <span className="text-nox-light">{shipping.toFixed(2)} EGP</span>
                       }
                     </span>
                   </div>
@@ -157,9 +159,9 @@ export default function CartPage() {
                 <div className="border-t border-nox-border pt-4 mb-6">
                   <div className="flex justify-between items-baseline">
                     <span className="font-mono text-[11px] text-nox-gray">Total</span>
-                    <span className="font-mono text-2xl text-nox-accent">${orderTotal.toFixed(2)}</span>
+                    <span className="font-mono text-2xl text-nox-accent">{orderTotal.toFixed(2)} EGP</span>
                   </div>
-                  <p className="font-mono text-[9px] text-nox-muted mt-1">USD · Taxes may apply at checkout</p>
+                  <p className="font-mono text-[9px] text-nox-muted mt-1">EGP · Taxes may apply at checkout</p>
                 </div>
 
                 {/* CTA */}

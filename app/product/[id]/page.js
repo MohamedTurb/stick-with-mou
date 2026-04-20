@@ -169,9 +169,9 @@ export default function ProductPage() {
             {/* Price */}
             <div className="flex items-baseline gap-3 mb-6">
               <span className="font-mono text-3xl text-nox-accent">
-                ${product.price.toFixed(2)}
+                {product.price.toFixed(2)} EGP
               </span>
-              <span className="font-mono text-[10px] text-nox-muted tracking-widest">USD / per sticker</span>
+              <span className="font-mono text-[10px] text-nox-muted tracking-widest">EGP / per sticker</span>
             </div>
 
             {/* Description */}
@@ -246,7 +246,7 @@ export default function ProductPage() {
             {/* Trust badges */}
             <div className="border-t border-nox-border pt-6 grid grid-cols-2 gap-3">
               {[
-                ["🚚", "Free shipping over $20"],
+                ["🚚", "Free shipping over 200 EGP"],
                 ["🛡️", "Weatherproof guarantee"],
                 ["✂️", "Die-cut precision"],
                 ["🌍", "Ships worldwide"],

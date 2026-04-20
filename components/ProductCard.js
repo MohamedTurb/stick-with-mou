@@ -95,7 +95,7 @@ export default function ProductCard({ product, index = 0 }) {
               </p>
             </div>
             <span className="font-mono text-sm text-nox-accent whitespace-nowrap mt-1">
-              ${product.price.toFixed(2)}
+              {product.price.toFixed(2)} EGP
             </span>
           </div>
         </div>
