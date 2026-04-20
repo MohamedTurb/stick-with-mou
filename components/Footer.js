@@ -60,17 +60,17 @@ export default function Footer() {
           </h4>
           <div className="space-y-4">
             <a
-              href="https://instagram.com"
+              href="https://www.instagram.com/stickwith.mou?igsh=b3F0bm4xbXp3OGg5"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-3 text-nox-light hover:text-nox-accent transition-colors group"
             >
               <Instagram size={16} />
-              <span className="text-sm">@stickwithmou</span>
+              <span className="text-sm">@stickwith.mou</span>
               <ArrowUpRight size={12} className="opacity-0 group-hover:opacity-100 transition-opacity" />
             </a>
             <a
-              href="https://wa.me/201000000000"
+              href="https://wa.me/201030498067"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-3 text-nox-light hover:text-nox-accent transition-colors group"

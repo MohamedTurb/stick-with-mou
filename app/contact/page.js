@@ -197,7 +197,7 @@ export default function ContactPage() {
               </div>
               <div>
                 <p className="font-mono text-xs text-nox-white tracking-[0.2em] uppercase mb-0.5">WhatsApp</p>
-                <p className="font-mono text-[10px] text-nox-gray">+20 100 000 0000</p>
+                <p className="font-mono text-[10px] text-nox-gray">01030498067</p>
                 <p className="font-mono text-[9px] text-nox-muted mt-1">Fastest replies · Orders & support</p>
               </div>
             </a>
@@ -214,7 +214,7 @@ export default function ContactPage() {
               </div>
               <div>
                 <p className="font-mono text-xs text-nox-white tracking-[0.2em] uppercase mb-0.5">Instagram</p>
-                <p className="font-mono text-[10px] text-nox-gray">@stickwithmou</p>
+                <p className="font-mono text-[10px] text-nox-gray">@stickwith.mou</p>
                 <p className="font-mono text-[9px] text-nox-muted mt-1">DMs open · New drops first</p>
               </div>
             </a>
