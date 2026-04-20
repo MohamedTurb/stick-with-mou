@@ -121,6 +121,15 @@ body {
   transform: scale(1.06);
 }
 
+/* Shared background pattern for all product image containers */
+.product-bg-pattern {
+  background-color: #0a2f57;
+  background-image: url("/images/products-bg-pattern.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 /* Skeleton shimmer */
 @keyframes shimmer {
   0% { background-position: -200% 0; }

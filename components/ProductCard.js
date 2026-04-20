@@ -42,7 +42,7 @@ export default function ProductCard({ product, index = 0 }) {
       <Link href={`/product/${product.id}`} className="group block">
         <div className="bg-nox-card border border-nox-border hover:border-nox-muted transition-all duration-300 overflow-hidden">
           {/* Image Container */}
-          <div className="product-img-wrap relative aspect-square bg-nox-dark overflow-hidden">
+          <div className="product-img-wrap product-bg-pattern relative aspect-square overflow-hidden">
             <Image
               src={product.images[0]}
               alt={product.name}
