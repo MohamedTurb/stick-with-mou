@@ -187,7 +187,7 @@ export default function ContactPage() {
 
             {/* WhatsApp */}
             <a
-              href="https://wa.me/201030498067?text=Hey%20Stick%20With%20Mou%2C%20I%20want%20to%20order%20stickers!"
+              href="https://wa.me/201126761803?text=Hey%20Stick%20With%20Mou%2C%20I%20want%20to%20order%20stickers!"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-4 p-5 bg-nox-card border border-nox-border hover:border-nox-accent transition-all duration-200 group"
@@ -197,7 +197,7 @@ export default function ContactPage() {
               </div>
               <div>
                 <p className="font-mono text-xs text-nox-white tracking-[0.2em] uppercase mb-0.5">WhatsApp</p>
-                <p className="font-mono text-[10px] text-nox-gray">01030498067</p>
+                <p className="font-mono text-[10px] text-nox-gray">01126761803</p>
                 <p className="font-mono text-[9px] text-nox-muted mt-1">Fastest replies · Orders & support</p>
               </div>
             </a>

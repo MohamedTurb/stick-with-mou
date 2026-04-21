@@ -70,7 +70,7 @@ export default function Footer() {
               <ArrowUpRight size={12} className="opacity-0 group-hover:opacity-100 transition-opacity" />
             </a>
             <a
-              href="https://wa.me/201030498067"
+              href="https://wa.me/201126761803"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-3 text-nox-light hover:text-nox-accent transition-colors group"

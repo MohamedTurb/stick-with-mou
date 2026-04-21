@@ -14,7 +14,7 @@ export default function CartPage() {
   const shipping = totalPrice >= freeShippingThreshold ? 0 : totalPrice === 0 ? 0 : shippingFee;
   const orderTotal = totalPrice + shipping;
   const freeShippingRemaining = Math.max(0, freeShippingThreshold - totalPrice);
-  const whatsappNumber = "201030498067";
+  const whatsappNumber = "201126761803";
 
   const handleWhatsAppCheckout = () => {
     if (!cartItems.length) return;
